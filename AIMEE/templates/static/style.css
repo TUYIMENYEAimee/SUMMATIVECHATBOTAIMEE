@@ -1,95 +1,122 @@
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
     padding: 0;
-    background-color: #e8f0fe; /* Light blue background for a calm look */
-    color: #333; /* Dark gray text for better readability */
+    background: linear-gradient(135deg, #e8f0fe, #c0c9f7); /* Soft gradient background */
+    color: #333; /* Dark gray text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 /* Chatbot container styling */
 .chatbot-container {
     max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background: white; /* White background for contrast */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
-    border: 1px solid #d1d9e6; /* Light border for a subtle effect */
+    width: 100%;
+    padding: 25px;
+    background: #ffffff; /* White background for the container */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center;
+    border: 1px solid #d1d9e6;
 }
 
 /* Title styling */
 h1 {
-    text-align: center;
-    color: #1e90ff; /* Bright blue for the title */
-    font-size: 24px;
+    color: #4caf50; /* Green for the title */
+    font-size: 32px;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for effect */
+    font-weight: bold;
 }
 
 /* Form label styling */
 label {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    color: #333; /* Match the general text color */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Input field styling */
 input {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #d1d9e6; /* Light gray border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 14px;
-    width: calc(100% - 24px); /* Ensure it adjusts to the container */
+    padding: 12px;
+    margin-right: 10px;
+    border: 2px solid #4caf50; /* Green border */
+    border-radius: 6px;
+    font-size: 16px;
+    width: 70%;
     box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Input focus effect */
+input:focus {
+    border-color: #388e3c; /* Darker green on focus */
+    outline: none;
 }
 
 /* Button styling */
 button {
-    padding: 10px 20px;
-    margin: 10px 0;
-    background-color: #4caf50; /* Green for a positive, action-oriented look */
+    padding: 12px 20px;
+    background-color: #4caf50; /* Green for action */
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 6px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+    transition: background-color 0.3s, transform 0.2s ease; /* Smooth hover effect */
 }
 
-/* Hover effect for the button */
+/* Button hover effect */
 button:hover {
-    background-color: #388e3c; /* Slightly darker green on hover */
+    background-color: #388e3c; /* Darker green */
     transform: scale(1.05); /* Slight zoom-in effect */
-}
-
-/* Button focus effect */
-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px 2px #4caf50;
 }
 
 /* Response section styling */
 .response {
     margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f8ff; /* Light blue background for responses */
+    border: 1px solid #c8d9eb; /* Light gray border */
+    border-radius: 8px;
+    color: #333;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+/* User question styling */
+.user-question {
     padding: 10px;
-    background-color: #f9f9f9; /* Very light gray for contrast */
-    border: 1px solid #d1d9e6; /* Light gray border */
-    border-radius: 5px;
-    color: #333; /* Match the text color */
+    margin: 10px 0;
+    background-color: #e0f7fa; /* Light cyan background for user's question */
+    border-left: 5px solid #4caf50; /* Green left border for distinction */
+    color: #333;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: bold;
 }
 
 /* Strong text (questions and answers) */
 .response p strong {
-    color: #1e90ff; /* Highlight important parts with blue */
+    color: #4caf50; /* Highlight important parts with green */
 }
 
 /* Link colors if any links are added */
 a {
-    color: #1e90ff;
+    color: #4caf50;
     text-decoration: none;
 }
 
